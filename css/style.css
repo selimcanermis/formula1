@@ -167,29 +167,134 @@ header ul li a{
 }
 /* #ef0000 */
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1440px) {
+    /* index.html */
+    section{
+        padding: 80px;
+    }
+    header{
+        padding: 30px 80px;
+    }
     .content .textBox {
       max-width: 900px;
     }
     .content .textBox .text{
         color: #C00000;
         font-size:  7.6em;
-        line-height: 1em;
-        font-weight: 900;
     }
     .content .textBox th{
         text-align: left;
         font-size:  2.4em;
-        line-height: 1em;
-        font-weight: 500;
     }
     .content .textBox td{
         text-align: right;
         font-size:  2.2em;
-        line-height: 1em;
-        font-weight: 400;
     }
     header .logo{
         max-width: 200px;
+    }
+    /* pilots.html */
+    .card{
+        width: 800px;
+        height: 400px;
+        margin: 30px;
+    }
+    .card img{
+        left: 50%;
+        height: 450px;
+    }
+    .card:hover img{
+        height: 500px;
+    }
+    .card .cardText{
+        padding: 30px 30px 30px 50px;
+    }
+    .card .cardText h2{
+        font-size: 3em;
+    }
+    .card .cardText p{
+        font-size: 1.7em;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    /* index.html */
+    section{
+        padding: 30px;
+    }
+    header{
+        padding: 10px 30px;
+    }
+    .content .textBox {
+      max-width: 450px;
+    }
+    .content .textBox .text{
+        color: #C00000;
+        font-size:  3em;
+    }
+    .content .textBox th{
+        text-align: left;
+        font-size:  1em;
+        line-height: 1em;
+    }
+    .content .textBox td{
+        text-align: right;
+        font-size:  1.2em;
+        line-height: 1em;
+    }
+    .content .imgBox{
+        width: 450px;
+    }
+    .content .imgBox img{
+        max-width: 450px;
+    }
+    header .logo{
+        max-width: 100px;
+    }
+    header ul li{
+        font-weight: 500;
+        font-size: 1em;
+    }
+    header ul li a{
+        margin-left: 20px;
+    }
+    .thumb{
+        left: 50%;
+        bottom: 20px;
+    }
+    .thumb li{
+        margin: 0 10px;
+    }
+    .thumb li:hover{
+        transform: translateY(-15px);
+    }
+    .thumb li img{
+        max-width: 50px;
+    }
+    .circle{
+    clip-path: circle(500px at right)
+    }
+
+    /* pilots.html */
+    .card{
+        width: 420px;
+        height: 250px;
+        margin: 30px;
+    }
+    .card img{
+        left: 40%;
+        height: 275px;
+    }
+    .card:hover img{
+        left: 65%;
+        height: 300px;
+    }
+    .card .cardText{
+        padding: 10px 10px 10px 30px;
+    }
+    .card .cardText h2{
+        font-size: 1.5em;
+    }
+    .card .cardText p{
+        font-size: 1em;
     }
   }
