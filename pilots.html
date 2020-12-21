@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formula 1</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
@@ -51,6 +54,45 @@
             <li><img src="images/logo/williams.jpg" onclick="changeImage('images/pilots/williams-1.png','images/pilots/williams-2.png'); changePilotInfo('george russell', 'united kingdom', 'nicholas latifi', 'canada'); changeTextColor('linear-gradient(135deg, rgba(0,130,250,1) 0%, rgba(0,0,0,1) 90%)')"></li>
         </ul>
     </section>
+
+    <!-- Footer -->
+    <footer class="sectionArea">
+        <div class="container">
+            <div class="col3">
+                <div class="footerItem">
+                    <h3>MOBILE APPS</h3>
+                    <img src="images/app-logo.png">
+                </div>
+            </div>
+            <div class="col3">
+                <div class="footerItem">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="footerLinks">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="index.html">TEAMS</a></li>
+                        <li><a href="pilots.html">PILOTS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col3">
+                <div class="footerItem">
+                    <h3>SOCIAL MEDIA</h3>
+                    <ul class="socialLinks">
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    <ul class="socialLinks">
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-play"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script type="text/javascript">
         function changeImage(anything1,anything2){
             document.querySelector('.pilot1').src = anything1

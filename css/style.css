@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
+}
+body{
+    height: 100%;
     font-family: 'Poppins', sans-serif;
 }
 section{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 50px;
+    padding: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,14 +24,14 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 50px;
+    padding: 3% 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 header .logo{
     position: relative;
-    max-width: 100px;
+    max-width: 15%;
 }
 header ul{
     position: relative;
@@ -40,7 +45,7 @@ header ul li{
 }
 header ul li a{
     display: inline-block;
-    color: #000;
+    color: #15151e;
     font-weight: 500;
     margin-left: 40px;
     text-decoration: none;
@@ -54,7 +59,7 @@ header ul li a{
 }
 .content .textBox{
     position: relative;
-    max-width: 600px;
+    max-width: 800px;
 }
 .content .textBox .text{
     color: #C00000;
@@ -100,8 +105,86 @@ header ul li a{
     transform: translateY(-15px);
 }
 .thumb li img{
-    max-width: 80px;
+    max-width: 100px;
 }
+footer{
+    background: #15151e;
+    text-align: center;
+    height: 250px;   
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.col3{
+    flex-grow: 1;
+    width: 300px;
+}
+.sectionArea {
+    padding: 30px 50px;
+}
+.footerItem{
+    padding: 20px;
+}
+.footerItem img{
+    height: 100px;
+    width: 200px;
+    /* opacity: .5; */
+}
+.footerItem ul li{
+    list-style: none;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+footer h3{
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+footer p{
+    padding: 10px;
+    color: #95a5a6;
+    line-height: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+footer .fab{
+    font-size: 30px;
+    color: #95a5a6;
+    line-height: 40px;
+    transition: .3s ease;
+}
+footer .fab:hover{
+    color: #FFF;
+}
+.footerLinks a{
+    text-decoration: none;
+    color: #95a5a6;
+    letter-spacing: 2px;
+    transition: .3s ease;
+}
+.footerLinks a:hover{
+    color: #FFF;
+    text-decoration: underline;
+}
+.socialLinks li{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+.tel{
+    font-size: 25px;
+    font-family: PizzaPress, sans-serif;
+    color: #95a5a6;
+    text-decoration: none;
+}
+
 
 /* PILOTS CARDS */
 .card{
@@ -146,11 +229,14 @@ header ul li a{
     color: #fff;
     text-transform: uppercase;
     font-size: 2em;
+    font-weight: 700;
     line-height: 1em;
 }
 .card .cardText p{
     color: #fff;
     text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 10px;
 }
 
 
@@ -166,6 +252,7 @@ header ul li a{
     clip-path: circle(725px at right)
 }
 /* #ef0000 */
+
 
 @media screen and (min-width: 1440px) {
     /* index.html */
