@@ -15,78 +15,23 @@
 </head>
 
 <body>
-    <section>
-        <div class="circle"></div>
-        <header>
-            <a href="index.html"><img src="images/formula-1-logo.png" class="logo"></a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Teams</a></li>
-                <li><a href="pilots.html">Pilots</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </header>
-        <div class="content">
-            <div class="textBox">
-                <h4 class="text">FERRARI</h4>
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>Base</th>
-                            <td class="td">Maranello, Italy</td>
-                        </tr>
-                        <tr>
-                            <th>Team Chief</th>
-                            <td class="td">Mattia Binotto</td>
-                        </tr>
-                        <tr>
-                            <th>Power Unit</th>
-                            <td class="td">Ferrari</td>
-                        </tr>
-                        <tr>
-                            <th>World Championships</th>
-                            <td class="td">16</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="imgBox">
-                <img src="images/cars/ferrari.png" class="team">
+    <header>
+        <a href="index.html"><img src="images/formula-1-logo.png" class="logo"></a>
+    </header>
+
+    <div id="mainSlider">
+        <div id="mainCaption" class="caption">
+            <div class="container" id="end">
+                <div class="menu">
+                    <ul>
+                        <button onclick="document.location='teams.html'" class="button button1">TEAMS</button>
+                        <button onclick="document.location='pilots.html'" class="button button1">PILOTS</button>
+                        <button onclick="document.location='standings.html'" class="button button1">STANDINGS</button>
+                    </ul>
+                </div>
             </div>
         </div>
-        <ul class="thumb">
-            <li><img src="images/logo/ferrari.png"
-                    onclick="changeImage('images/cars/ferrari.png'); changeCircleColor('linear-gradient(180deg, rgba(192,0,0,1) 0%, rgba(255,255,255,1) 95%)'); changeTextColor('#C00000'); changeText('FERRARI');changeText_td('Maranello, Italy','Mattia Binotto','Ferrari','16')">
-            </li>
-            <li><img src="images/logo/mercedes.png"
-                    onclick="changeImage('images/cars/mercedes.png'); changeCircleColor('linear-gradient(180deg, rgba(0,210,190,1) 0%, rgba(255,255,255,1) 95%)'); changeTextColor('#00D2BE'); changeText('MERCEDES');changeText_td('Brackley, UK','Toto Wolff','Mercedes','7')">
-            </li>
-            <li><img src="images/logo/redBull.jpg"
-                    onclick="changeImage('images/cars/redBull.png'); changeCircleColor('linear-gradient(180deg, rgba(6,0,239,1) 0%, rgba(255,255,255,1) 95%)'); changeTextColor('#0600EF'); changeText('REDBULL');changeText_td('Milton Keynes, UK','Christian Horner','Honda','4')">
-            </li>
-            <li><img src="images/logo/mclaren.jpg"
-                    onclick="changeImage('images/cars/mclaren.png'); changeCircleColor('linear-gradient(180deg, rgba(255,135,0,1) 0%, rgba(255,255,255,1) 95%)'); changeTextColor('#FF8700'); changeText('McLAREN');changeText_td('Woking, UK','Andreas Seidl','Renault','8')">
-            </li>
-            <li><img src="images/logo/renault.jpg"
-                    onclick="changeImage('images/cars/renault.png'); changeCircleColor('linear-gradient(180deg, rgba(255,245,0,1) 0%, rgba(255,255,255,1) 95%)'); changeTextColor('#FFF500'); changeText('RENAULT');changeText_td('Enstone, UK','Cyril Abiteboul','Renault','2')">
-            </li>
-            <li><img src="images/logo/alphatauri.jpg"
-                    onclick="changeImage('images/cars/alphatauri.png'); changeCircleColor('linear-gradient(180deg, rgba(200,200,200,1) 0%, rgba(255,255,255,1) 95%)'); changeTextColor('#C8C8C8'); changeText('ALPHA TAURI');changeText_td('Faenza, Italy','Franz Tost','Honda','N/A')">
-            </li>
-            <li><img src="images/logo/racingPoint.jpg"
-                    onclick="changeImage('images/cars/racingPoint.png'); changeCircleColor('linear-gradient(180deg, rgba(245,150,200,1) 0%, rgba(255,255,255,1) 95%)'); changeTextColor('#F596C8'); changeText('RACING POINT');changeText_td('Silverstone, UK','Otmar Szafnauer','BWT Mercedes','N/A')">
-            </li>
-            <li><img src="images/logo/alfaRomeo.jpg"
-                    onclick="changeImage('images/cars/alfaRomeo.png'); changeCircleColor('linear-gradient(180deg, rgba(150,0,0,1) 0%, rgba(255,255,255,1) 95%)'); changeTextColor('#960000'); changeText('ALFA ROMEO');changeText_td('Hinwil, Switzerland','Frédéric Vasseur','Ferrari','N/A')">
-            </li>
-            <li><img src="images/logo/haas.jpg"
-                    onclick="changeImage('images/cars/haas.png'); changeCircleColor('linear-gradient(180deg, rgba(120,120,120,1) 0%, rgba(255,255,255,1) 95%)'); changeTextColor('#787878'); changeText('HAAS');changeText_td('Kannapolis, USA','Guenther Steiner','Ferrari','N/A')">
-            </li>
-            <li><img src="images/logo/williams.jpg"
-                    onclick="changeImage('images/cars/williams.png'); changeCircleColor('linear-gradient(180deg, rgba(0,130,250,1) 0%, rgba(255,255,255,1) 95%)'); changeTextColor('#0082FA'); changeText('WILLIAMS');changeText_td('Grove, UK','Simon Roberts','Mercedes','9')">
-            </li>
-        </ul>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="sectionArea">
@@ -102,9 +47,9 @@
                     <h3>QUICK LINKS</h3>
                     <ul class="footerLinks">
                         <li><a href="index.html">HOME</a></li>
-                        <li><a href="index.html">TEAMS</a></li>
+                        <li><a href="teams.html">TEAMS</a></li>
                         <li><a href="pilots.html">PILOTS</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="standings.html">STANDINGS</a></li>
                     </ul>
                 </div>
             </div>
@@ -125,32 +70,6 @@
             </div>
         </div>
     </footer>
-    
-
-    <script type="text/javascript">
-        function changeImage(anything) {
-            document.querySelector('.team').src = anything
-        }
-        function changeCircleColor(color) {
-            const circle = document.querySelector('.circle');
-            circle.style.background = color;
-        }
-        function changeTextColor(color) {
-            const textColor = document.querySelector('.text');
-            textColor.style.color = color;
-        }
-        function changeText(anything) {
-            const text = document.querySelector('.text')
-            text.textContent = anything;
-        }
-        function changeText_td(anything1, anything2, anything3, anything4) {
-            var x = document.querySelectorAll('.td');
-            x[0].textContent = anything1;
-            x[1].textContent = anything2;
-            x[2].textContent = anything3;
-            x[3].textContent = anything4;
-        }
-    </script>
 </body>
 
 </html>

@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url('../fonts/Lato/Lato-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Lato-Bold;
+    src: url('../fonts/Lato/Lato-Bold.ttf'); 
+  }  
+
 *{
     padding: 0;
     margin: 0;
@@ -61,6 +72,9 @@ header ul li a{
     position: relative;
     max-width: 800px;
 }
+.content .textBox table{
+    max-width: 500px;
+}
 .content .textBox .text{
     color: #C00000;
     font-size:  6em;
@@ -72,12 +86,14 @@ header ul li a{
     font-size:  1.4em;
     line-height: 1em;
     font-weight: 500;
+    width: 250px;
 }
 .content .textBox td{
-    text-align: right;
+    text-align: left;
     font-size:  1.2em;
     line-height: 1em;
     font-weight: 400;
+    width: 250px;
 }
 .content .imgBox{
     width: 600px;
@@ -239,8 +255,169 @@ footer .fab:hover{
     margin-top: 10px;
 }
 
+/* index background */
+#mainSlider{
+    width: 100%;
+    background: url('../images/main-1.jpg') center center no-repeat;
+    background-size: cover;
+}
+#mainCaption{
+    min-height: 100vh;
+    background: rgba(0,0,0,.7);
+}
+.caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    color:#000;
+}
+.menu{
+    width: 30%;
+    height: 30%;
+    margin-left: 40%;
+    text-align: center;   
+}
+
+/* buttons */
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.button1 {
+    /* background-color: white; 
+    color: #c00; 
+    border: 2px solid #c00000; */
+
+    background-color: #c00000; 
+    color: #fff; 
+    /* border: 2px solid #fff; */
+}
+  
+.button1:hover {
+    /* background-color: #c00000;
+    color: white; */
+
+    background-color: white ;
+    color: #c00000;
+}
 
 
+
+
+
+/* STANDINGS PAGE */
+
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+}
+.container-table100 {
+    width: 800px;
+    min-height: 700px;
+    background: #fff;
+  
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.wrap-table100 {
+    width: 800px;
+}
+.table100 {
+    position: relative;
+    padding-top: 40px;
+    background-color: #fff;
+}
+/*=========[ Ver1 ]========*/
+.table100.ver1 th {
+    font-family: Lato-Bold;
+    font-size: 18px;
+    color: #fff;
+    line-height: 0.5;
+    background-color: #c00000;
+    text-align: start;
+}
+.table100.ver1 td {
+    font-family: Lato-Regular;
+    font-size: 16px;
+    color: #808080;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.table100.ver1 .table100-body tr:nth-child(even) {
+    background-color: #f8f6ff;
+}
+.table100.ver1 {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+table {
+    width: 100%;
+}
+th, td {
+    font-weight: unset;
+    text-align: flex-start;
+}
+.column1 {
+    width: 10%;
+    padding-left: 20px;
+} 
+.column2 {
+    width: 30%;
+    font-weight: 900;
+} 
+.column3 {
+    width: 15%;
+} 
+.column4 {
+    width: 35%;
+} 
+.column5 {
+    width: 10%;
+}
+.table100-head th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.table100-body td {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.table100-head {
+    position: absolute;
+    width: 800px;
+    top: 0;
+    left: 0;
+}
+.table100-body {
+    max-height: 900px;
+}
+  
 
 .circle{
     position: absolute;
@@ -251,10 +428,9 @@ footer .fab:hover{
     background: linear-gradient(180deg, rgba(192,0,0,1) 0%, rgba(255,255,255,1) 95%);
     clip-path: circle(725px at right)
 }
-/* #ef0000 */
 
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1600px){
     /* index.html */
     section{
         padding: 80px;
@@ -262,8 +438,8 @@ footer .fab:hover{
     header{
         padding: 30px 80px;
     }
-    .content .textBox {
-      max-width: 900px;
+    .content .textBox{
+    max-width: 900px;
     }
     .content .textBox .text{
         color: #C00000;
@@ -279,7 +455,7 @@ footer .fab:hover{
     }
     header .logo{
         max-width: 200px;
-    }
+        }
     /* pilots.html */
     .card{
         width: 800px;
@@ -292,7 +468,7 @@ footer .fab:hover{
     }
     .card:hover img{
         height: 500px;
-    }
+        }
     .card .cardText{
         padding: 30px 30px 30px 50px;
     }
@@ -302,8 +478,8 @@ footer .fab:hover{
     .card .cardText p{
         font-size: 1.7em;
     }
-  }
-  @media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 1024px) {
     /* index.html */
     section{
         padding: 30px;
@@ -384,4 +560,4 @@ footer .fab:hover{
     .card .cardText p{
         font-size: 1em;
     }
-  }
+}
