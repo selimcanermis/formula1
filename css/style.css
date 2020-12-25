@@ -211,7 +211,8 @@ footer .fab:hover{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border-radius: 20px;
+    border: solid 10px #fff;
+    border-radius: 50px;
     /* background: #C00000; */
     background: linear-gradient(135deg, rgba(192,0,0,1) 0%, rgba(0,0,0,1) 90%);
 }
@@ -263,7 +264,7 @@ footer .fab:hover{
 }
 #mainCaption{
     min-height: 100vh;
-    background: rgba(0,0,0,.7);
+    background: rgba(0,0,0,.3);
 }
 .caption{
     display: flex;
@@ -272,11 +273,15 @@ footer .fab:hover{
     width: 100%;
     color:#000;
 }
+/* .menu{
+    width: 320px;
+    height: 340px;
+    margin-left: 700px;   
+} */
 .menu{
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 20%;
     margin-left: 40%;
-    text-align: center;   
 }
 
 /* buttons */
@@ -294,7 +299,7 @@ footer .fab:hover{
     margin: 10px 10px;
     transition-duration: 0.4s;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 .button1 {
     /* background-color: white; 
@@ -321,8 +326,7 @@ footer .fab:hover{
 /* STANDINGS PAGE */
 
 .limiter {
-    width: 100%;
-    margin: 0 auto;
+    width: 70%;
 }
 .container-table100 {
     width: 800px;
@@ -417,6 +421,36 @@ th, td {
 .table100-body {
     max-height: 900px;
 }
+
+
+
+.year{
+    width: 20%;
+    height: 20%;
+    margin-right: 8%;
+}
+.button1s {
+    /* background-color: white; 
+    color: #c00; 
+    border: 2px solid #c00000; */
+
+    background-color: #c00000; 
+    color: #fff; 
+    /* border: 2px solid #fff; */
+}
+  
+.button1s:hover {
+    /* background-color: #c00000;
+    color: white; */
+
+    background-color: white ;
+    color: #c00000;
+    border: solid 5px #c00000;
+}
+
+
+
+
   
 
 .circle{
@@ -430,6 +464,9 @@ th, td {
 }
 
 
+
+
+ 
 @media screen and (min-width: 1600px){
     /* index.html */
     section{
@@ -441,6 +478,9 @@ th, td {
     .content .textBox{
     max-width: 900px;
     }
+    .content .textBox table{
+        max-width: 700px;
+    }
     .content .textBox .text{
         color: #C00000;
         font-size:  7.6em;
@@ -448,10 +488,12 @@ th, td {
     .content .textBox th{
         text-align: left;
         font-size:  2.4em;
+        width: 350px;
     }
     .content .textBox td{
         text-align: right;
         font-size:  2.2em;
+        width: 350px;
     }
     header .logo{
         max-width: 200px;
